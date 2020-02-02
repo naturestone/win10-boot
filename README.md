@@ -29,5 +29,7 @@ Andere Lösungsansätze waren ebenfalls häufig nicht erfolgreich oder verlangte
 Grundsätzlich verfolgt der hier dargestellte Lösungsansatz folgendes Szenario:
 
 - das USB-Startmedium benötigt eine GPT-Partitionstabelle (gparted oder fdisk)
-- als Partitionstyp soll Typ=11 *Microsoft basic data* verwendet werden
-- beim kopieren von Dateien größer 4GB muss gesplitted werden (wimtools, wimsplit)
+- als Partitionstyp soll Typ=11 *Microsoft basic data* verwendet werden (fdisk)
+- beim Kopieren von Dateien größer 4GB muss gesplitted werden (wimtools, wimsplit)
+
+Letztendlich wird das ISO-Datenträgerabbild unter Linux gemounted und alle Verzeichnisse und Dateien auf den USB-Stick übertragen.
