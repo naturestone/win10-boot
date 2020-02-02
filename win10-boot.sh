@@ -28,18 +28,17 @@ sudo dd if=/dev/zero of=$DEVICE bs=1M count=1
 
 # Partitionen einrichten
 # Wichtige Anpassungen:
-# - mit Option g zuerst GPT-Partitionstabelle anlegen
-# - ersetze Partitionstyp c mit 11 („Microsoft basic data“)
-# - entfernen von Option a (Bootable), da bei Typ=11 nicht erforderlich
+# - mit Option o zuerst DOS-Partitionstabelle anlegen
 sudo fdisk ${DEVICE}
-g
+o
 n
 p
 1
 ENTER
 ENTER
 t
-11
+c
+a
 w
 
 # Formatierung, mounten des Laufwerks

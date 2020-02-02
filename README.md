@@ -36,3 +36,29 @@ Nicht so einfach gelingt das Erstellen eines bootbaren USB-Sticks unter Linux. F
 
 Andere Lösungsansätze waren ebenfalls häufig nicht erfolgreich oder verlangten die Installation alter Linuxprogramme oder das hinzufügen neuer Paketeverzeichnisse. Damit war ich nicht glücklich und es musste eine andere Lösung her.
 
+## Troubleshooting
+
+Beispiel für ein funktionierendes Medium:
+
+        Device: /dev/sdh1
+           Boot: *
+          Start: 2048
+            End: 67110911
+        Sectors: 67108864
+      Cylinders: 4178
+           Size: 32G
+             Id: c
+           Type: W95 FAT32 (LBA)
+    Start-C/H/S: 0/32/33
+      End-C/H/S: 1023/254/63
+          Attrs: 80
+
+    Festplatte /dev/sdh: 59,8 GiB, 64160400896 Bytes, 125313283 Sektoren
+    Einheiten: Sektoren von 1 * 512 = 512 Bytes
+    Sektorgröße (logisch/physikalisch): 512 Bytes / 512 Bytes
+    E/A-Größe (minimal/optimal): 512 Bytes / 512 Bytes
+    Festplattenbezeichnungstyp: dos
+    Festplattenbezeichner: 0x5ed15a53
+
+    Gerät      Boot Anfang     Ende Sektoren Größe Kn Typ
+    /dev/sdh1  *      2048 67110911 67108864   32G  c W95 FAT32 (LBA)
