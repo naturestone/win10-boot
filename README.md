@@ -1,2 +1,13 @@
-# win10-boot
-Windows 10 USB Startmedium erstellen unter Linux
+# Windows 10 Startmedium erstellen unter Linux (Ubuntu/Mint)
+
+Basierend auf der wunderbaren Beschreibung von admin:
+
+    https://www.admlife.de/2016/08/20/windows-10-installation-usb-stick-unter-linux-erstellen/
+    Posted on August 20, 2016 by admin	<<<
+ 
+In meinem Fall waren einige Anpassungen erforderlich, die im Skript entsprechend
+markiert sind.
+
+Für die Ausführung ist root-Berechtigung erforderlich.
+
+Es wird empfohlen, die Anleitung Step-by-Step in einem Terminal auszuführen.
