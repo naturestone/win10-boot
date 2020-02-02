@@ -13,7 +13,7 @@ Es wird empfohlen, die Anleitung Step-by-Step in einem Terminal auszuführen.
 
 ## Hintergrund
 
-Für die Vorbereitung einer Windows 10 Installation soll ein USB-Stick als Startmedium erstellt werden.  Ein Upgrade der vorhandenen Windows 7 Installation kommt nicht in Frage, da die Installation zwischenzeitlich diverse Ausfallerscheinungen. Ich selbst habe keine Windows-Systeme mehr laufen, weshalb ich den Stick unter Linux MINT 19 erstellen darf. Heruntergeladen wurde Windows 10 als Datenträgerabbild `.ISO` über folgende URL:
+Für die Vorbereitung einer Windows 10 Installation soll ein USB-Stick als Startmedium erstellt werden.  Ein Upgrade der vorhandenen Windows 7 Installation kommt nicht in Frage, da die Installation zwischenzeitlich diverse Ausfallerscheinungen zeigt. Ich selbst habe keine Windows-Systeme mehr laufen, weshalb ich den Stick unter Linux MINT 19 erstellen darf. Heruntergeladen wurde Windows 10 als Datenträgerabbild `.ISO` über folgende URL:
 
 - https://www.microsoft.com/de-de/software-download/windows10
 
