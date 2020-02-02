@@ -11,6 +11,16 @@ Für die Ausführung ist root-Berechtigung erforderlich.
 
 Es wird empfohlen, die Anleitung Step-by-Step in einem Terminal auszuführen.
 
+## Lösungsansatz
+
+Grundsätzlich verfolgt der hier dargestellte Lösungsansatz folgendes Szenario:
+
+- das USB-Startmedium benötigt eine GPT-Partitionstabelle (gparted oder fdisk)
+- als Partitionstyp soll Typ=11 *Microsoft basic data* verwendet werden (fdisk)
+- beim Kopieren von Dateien größer 4GB muss gesplitted werden (wimtools, wimsplit)
+
+Letztendlich wird das ISO-Datenträgerabbild unter Linux gemounted und alle Verzeichnisse und Dateien auf den USB-Stick übertragen.
+
 ## Hintergrund
 
 Für die Vorbereitung einer Windows 10 Installation soll ein USB-Stick als Startmedium erstellt werden.  Ein Upgrade der vorhandenen Windows 7 Installation kommt nicht in Frage, da die Installation zwischenzeitlich diverse Ausfallerscheinungen zeigt. Ich selbst habe keine Windows-Systeme mehr laufen, weshalb ich den Stick unter Linux MINT 19 erstellen darf. Heruntergeladen wurde Windows 10 als Datenträgerabbild `.ISO` über folgende URL:
@@ -26,10 +36,3 @@ Nicht so einfach gelingt das Erstellen eines bootbaren USB-Sticks unter Linux. F
 
 Andere Lösungsansätze waren ebenfalls häufig nicht erfolgreich oder verlangten die Installation alter Linuxprogramme oder das hinzufügen neuer Paketeverzeichnisse. Damit war ich nicht glücklich und es musste eine andere Lösung her.
 
-Grundsätzlich verfolgt der hier dargestellte Lösungsansatz folgendes Szenario:
-
-- das USB-Startmedium benötigt eine GPT-Partitionstabelle (gparted oder fdisk)
-- als Partitionstyp soll Typ=11 *Microsoft basic data* verwendet werden (fdisk)
-- beim Kopieren von Dateien größer 4GB muss gesplitted werden (wimtools, wimsplit)
-
-Letztendlich wird das ISO-Datenträgerabbild unter Linux gemounted und alle Verzeichnisse und Dateien auf den USB-Stick übertragen.
